@@ -17,6 +17,27 @@ function App() {
             <ResumeCardProgress title={"TASKS"} percentage={50} icon={<BookIcon/>} colorTitle={"text-info"}
                                 colorBar={"bg-info"}/>
             <ResumeCard title={"PENDING REQUESTS"} text={"18"} icon={<ChatIcon/>} color={"text-warning"}/>
+
+            <div className={"card"}>
+                <div className={"card-header"}>
+                    Earnings Overview
+
+                    <div className={"dropdown float-end"}>
+                        <a className="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        </a>
+                        <ul className="dropdown-menu">
+                            <li><a className="dropdown-item" href="#">Action</a></li>
+                            <li><a className="dropdown-item" href="#">Another action</a></li>
+                            <li><a className="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className={"card-body"}>
+
+                </div>
+            </div>
+
         </div>
     );
 }
