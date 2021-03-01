@@ -12,7 +12,7 @@ function App() {
                 <CardBody>
                     <div className={"row"}>
                         <div className={"col-9"}>
-                            <p className={"small text-primary mb-0"}>EARNINGS (MONTHLY)</p>
+                            <p className={"small fw-bold text-primary mb-0"}>EARNINGS (MONTHLY)</p>
                             <p className={"small fw-bold mb-0"}>$40,000</p>
                         </div>
                         <div className={"col-3"}>
@@ -30,8 +30,8 @@ function App() {
                 <CardBody>
                     <div className={"row"}>
                         <div className={"col-9"}>
-                            <p className={"small text-primary mb-0"}>EARNINGS (MONTHLY)</p>
-                            <p className={"small fw-bold mb-0"}>$40,000</p>
+                            <p className={"small fw-bold text-success mb-0"}>EARNINGS (ANNUAL)</p>
+                            <p className={"small fw-bold mb-0"}>$215,000</p>
                         </div>
                         <div className={"col-3"}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
