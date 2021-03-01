@@ -1,6 +1,5 @@
 import './App.css';
 
-import {Row} from './Component/Row';
 import {Card} from './Component/Card';
 import {CardBody} from "./Component/CardBody";
 import {CalendarIcon} from "./Icon/Calendar";
@@ -43,19 +42,7 @@ function App() {
                 </CardBody>
             </Card>
 
-            <Card>
-                <CardBody>
-                    <div className={"row"}>
-                        <div className={"col-9"}>
-                            <p className={"small fw-bold text-warning mb-0"}>PENDING REQUESTS</p>
-                            <p className={"small fw-bold mb-0"}>18</p>
-                        </div>
-                        <div className={"col-3"}>
-                            <ChatIcon/>
-                        </div>
-                    </div>
-                </CardBody>
-            </Card>
+            <ResumeCard title={"PENDING REQUESTS"} text={"18"} icon={<ChatIcon/>} color={"text-warning"}/>
         </div>
     );
 }
