@@ -1,16 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
       <div className="container-fluid bg-light">
           <h1 className={"text-muted py-3"}>Dashboard</h1>
-          <div className={"card rounded shadow-sm"}>
+          <div className={"card rounded shadow-sm py-3"}>
               <div className={"card-body"}>
                   <div className={"row"}>
                       <div className={"col-9"}>
                           <p className={"small text-primary mb-0"}>EARNINGS (MONTHLY)</p>
-                          <p className={"small mb-0"}>$40,000</p>
+                          <p className={"small fw-bold mb-0"}>$40,000</p>
                       </div>
                       <div className={"col-3"}>
                           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
