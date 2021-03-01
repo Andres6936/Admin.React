@@ -4,6 +4,7 @@ function App() {
   return (
       <div className="container-fluid bg-light">
           <h1 className={"text-muted py-3"}>Dashboard</h1>
+
           <div className={"card rounded shadow-sm py-2"}>
               <div className={"card-body"}>
                   <div className={"row"}>
