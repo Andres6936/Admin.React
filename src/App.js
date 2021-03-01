@@ -55,7 +55,7 @@ function App() {
                                 </div>
                                 <div className={"col-9"}>
                                     <div className="progress">
-                                        <div className="progress-bar bg-info" role="progressbar" style={progressStyle}
+                                        <div className="progress-bar bg-info" role="progressbar" style={{width: '50%'}}
                                              aria-valuenow="25"
                                              aria-valuemin="0" aria-valuemax="100">
                                         </div>
@@ -93,10 +93,6 @@ function App() {
             </Card>
         </div>
     );
-}
-
-const progressStyle = {
-    width: "25%"
 }
 
 export default App;
