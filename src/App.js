@@ -8,8 +8,8 @@ function App() {
         <div className="container-fluid bg-light">
             <h1 className={"text-muted py-3"}>Dashboard</h1>
 
-            <div className={"card rounded shadow-sm py-2 mb-4"}>
-                <div className={"card-body"}>
+            <Card>
+                <CardBody>
                     <div className={"row"}>
                         <div className={"col-9"}>
                             <p className={"small text-primary mb-0"}>EARNINGS (MONTHLY)</p>
@@ -23,8 +23,8 @@ function App() {
                             </svg>
                         </div>
                     </div>
-                </div>
-            </div>
+                </CardBody>
+            </Card>
 
             <Card>
                 <CardBody>
