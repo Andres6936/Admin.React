@@ -7,7 +7,7 @@ import {BookIcon} from "./Icon/Book";
 import {ChatIcon} from "./Icon/Chat";
 import {ResumeCardProgress} from "./Object/ResumeCardProgress";
 import {EarningChart} from "./Chart/EarningChart";
-import {RevenueSourcesChart} from "./Chart/RevenueSources";
+import {RevenueSourcesChart} from "./Chart/RevenueSourcesChart";
 
 function App() {
     return (
