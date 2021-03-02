@@ -109,6 +109,10 @@ function App() {
                         Bootstrap framework, especially the utility classes.</p>
                 </CardBody>
             </Card>
+
+            <footer className={"text-center text-muted py-5 bg-white"}>
+                Copyright © Your Website 2020
+            </footer>
         </div>
     );
 }
