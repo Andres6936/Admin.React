@@ -8,10 +8,7 @@ import {ChatIcon} from "./Icon/Chat";
 import {ResumeCardProgress} from "./Object/ResumeCardProgress";
 import {RevenueSources} from "./Object/RevenueSources";
 import {EarningOverview} from "./Object/EarningOverview";
-import {Card} from "./Component/Card";
-import {CardHeader} from "./Component/CardHeader";
-import {CardBody} from "./Component/CardBody";
-import {ProgressBar} from "./Object/ProgressBar";
+import {Projects} from "./Object/Projects";
 
 function App() {
     return (
@@ -27,18 +24,7 @@ function App() {
             <EarningOverview/>
             <RevenueSources/>
 
-            <Card>
-                <CardHeader title={"Projects"}>
-
-                </CardHeader>
-                <CardBody>
-                    <ProgressBar title={"Server Migration"} percentage={13} colorBar={"bg-primary"}/>
-                    <ProgressBar title={"Sales Tracking"} percentage={25} colorBar={"bg-success"}/>
-                    <ProgressBar title={"Customer Database"} percentage={50} colorBar={"bg-info"}/>
-                    <ProgressBar title={"Payout Details"} percentage={75} colorBar={"bg-warning"}/>
-                    <ProgressBar title={"Account Setup"} percentage={100} colorBar={"bg-danger"}/>
-                </CardBody>
-            </Card>
+            <Projects/>
         </div>
     );
 }
