@@ -19,12 +19,13 @@ function App() {
                                 colorBar={"bg-info"}/>
             <ResumeCard title={"PENDING REQUESTS"} text={"18"} icon={<ChatIcon/>} color={"text-warning"}/>
 
-            <div className={"card"}>
-                <div className={"card-header"}>
+            <div className={"card mb-4"}>
+                <div className={"card-header text-primary bg-light fw-bold"}>
                     Earnings Overview
 
                     <div className={"dropdown float-end"}>
-                        <a className="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a className="dropdown-toggle text-muted" type="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
                         </a>
                         <ul className="dropdown-menu">
                             <li><a className="dropdown-item" href="#">Action</a></li>
