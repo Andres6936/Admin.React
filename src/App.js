@@ -6,7 +6,7 @@ import {BellIcon} from "./Icon/Bell";
 import {BookIcon} from "./Icon/Book";
 import {ChatIcon} from "./Icon/Chat";
 import {ResumeCardProgress} from "./Object/ResumeCardProgress";
-import {EarningChart} from "./Chart/EarningChart";
+import {EarningOverviewChart} from "./Chart/EarningOverviewChart";
 import {RevenueSourcesChart} from "./Chart/RevenueSourcesChart";
 
 function App() {
@@ -41,7 +41,7 @@ function App() {
                 </div>
 
                 <div className={"card-body"}>
-                    <EarningChart/>
+                    <EarningOverviewChart/>
                 </div>
             </div>
 

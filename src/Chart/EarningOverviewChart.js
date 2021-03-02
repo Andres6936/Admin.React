@@ -1,7 +1,7 @@
 import React from 'react';
 import Chart from 'chart.js'
 
-export class EarningChart extends React.Component {
+export class EarningOverviewChart extends React.Component {
     constructor(props) {
         super(props);
         this.graphRef = React.createRef();
@@ -81,7 +81,7 @@ export class EarningChart extends React.Component {
                             padding: 10,
                             // Include a dollar sign in the ticks
                             callback: function (value, index, values) {
-                                return '$' + EarningChart.number_format(value);
+                                return '$' + EarningOverviewChart.number_format(value);
                             }
                         },
                         gridLines: {
@@ -113,7 +113,7 @@ export class EarningChart extends React.Component {
                     callbacks: {
                         label: function (tooltipItem, chart) {
                             const datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-                            return datasetLabel + ': $' + EarningChart.number_format(tooltipItem.yLabel);
+                            return datasetLabel + ': $' + EarningOverviewChart.number_format(tooltipItem.yLabel);
                         }
                     }
                 }
