@@ -6,11 +6,8 @@ import {BellIcon} from "./Icon/Bell";
 import {BookIcon} from "./Icon/Book";
 import {ChatIcon} from "./Icon/Chat";
 import {ResumeCardProgress} from "./Object/ResumeCardProgress";
-import {EarningOverviewChart} from "./Chart/EarningOverviewChart";
-import {RevenueSourcesChart} from "./Chart/RevenueSourcesChart";
-import {Card} from "./Component/Card";
-import {CardBody} from "./Component/CardBody";
-import {CardHeader} from "./Component/CardHeader";
+import {RevenueSources} from "./Object/RevenueSources";
+import {EarningOverview} from "./Object/EarningOverview";
 
 function App() {
     return (
@@ -23,59 +20,8 @@ function App() {
                                 colorBar={"bg-info"}/>
             <ResumeCard title={"PENDING REQUESTS"} text={"18"} icon={<ChatIcon/>} color={"text-warning"}/>
 
-            <Card>
-                <CardHeader title={"Earnings Overview"}>
-                    <div className={"dropdown float-end"}>
-                        <a className="dropdown-toggle text-muted" type="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                        </a>
-                        <ul className="dropdown-menu">
-                            <li><h6 className="dropdown-header">Dropdown header</h6></li>
-                            <li><a className="dropdown-item" href="#">Action</a></li>
-                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr className="dropdown-divider"/>
-                            </li>
-                            <li><a className="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                </CardHeader>
-
-                <CardBody>
-                    <EarningOverviewChart/>
-                </CardBody>
-            </Card>
-
-            <Card>
-                <CardHeader title={"Revenue Sources"}>
-                    <div className={"dropdown float-end"}>
-                        <a className="dropdown-toggle text-muted" type="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                        </a>
-                        <ul className="dropdown-menu">
-                            <li><h6 className="dropdown-header">Dropdown header</h6></li>
-                            <li><a className="dropdown-item" href="#">Action</a></li>
-                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr className="dropdown-divider"/>
-                            </li>
-                            <li><a className="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                </CardHeader>
-
-                <CardBody>
-                    <div>
-                        <RevenueSourcesChart/>
-                    </div>
-
-                    <div className={"row mt-4 text-center text-muted text-nowrap"}>
-                        <span className={"col-4"}><span className={"text-primary"}>&#9679;</span> Direct</span>
-                        <span className={"col-4"}><span className={"text-success"}>&#9679;</span> Social</span>
-                        <span className={"col-4"}><span className={"text-info"}>&#9679;</span> Referral</span>
-                    </div>
-                </CardBody>
-            </Card>
+            <EarningOverview/>
+            <RevenueSources/>
         </div>
     );
 }
