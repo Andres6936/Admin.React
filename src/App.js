@@ -31,7 +31,7 @@ function App() {
 
                 </CardHeader>
                 <CardBody>
-                    <p className={"text-muted mb-1 small"}>Server Migration</p>
+                    <p className={"text-muted mb-1 small"}>Server Migration <span className={"float-end"}>13%</span></p>
                     <div className="progress mb-3">
                         <div className="progress-bar bg-primary" role="progressbar" style={{width: "13%"}}
                              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
@@ -39,7 +39,7 @@ function App() {
                         </div>
                     </div>
 
-                    <p className={"text-muted mb-1 small"}>Sales Tracking</p>
+                    <p className={"text-muted mb-1 small"}>Sales Tracking <span className={"float-end"}>25%</span></p>
                     <div className="progress mb-3">
                         <div className="progress-bar bg-success" role="progressbar" style={{width: "25%"}}
                              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
@@ -47,7 +47,8 @@ function App() {
                         </div>
                     </div>
 
-                    <p className={"text-muted mb-1 small"}>Customer Database</p>
+                    <p className={"text-muted mb-1 small"}>Customer Database <span className={"float-end"}>50%</span>
+                    </p>
                     <div className="progress mb-3">
                         <div className="progress-bar bg-info" role="progressbar" style={{width: "50%"}}
                              aria-valuenow="50"
@@ -56,7 +57,7 @@ function App() {
                         </div>
                     </div>
 
-                    <p className={"text-muted mb-1 small"}>Payout Details</p>
+                    <p className={"text-muted mb-1 small"}>Payout Details <span className={"float-end"}>75%</span></p>
                     <div className="progress mb-3">
                         <div className="progress-bar bg-warning" role="progressbar" style={{width: "75%"}}
                              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
@@ -64,7 +65,7 @@ function App() {
                         </div>
                     </div>
 
-                    <p className={"text-muted mb-1 small"}>Account Setup</p>
+                    <p className={"text-muted mb-1 small"}>Account Setup <span className={"float-end"}>100%</span></p>
                     <div className="progress mb-3">
                         <div className="progress-bar bg-danger" role="progressbar" style={{width: "100%"}}
                              aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
