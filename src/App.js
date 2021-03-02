@@ -6,6 +6,7 @@ import {BellIcon} from "./Icon/Bell";
 import {BookIcon} from "./Icon/Book";
 import {ChatIcon} from "./Icon/Chat";
 import {ResumeCardProgress} from "./Object/ResumeCardProgress";
+import {EarningChart} from "./Chart/EarningChart";
 
 function App() {
     return (
@@ -34,7 +35,7 @@ function App() {
                 </div>
 
                 <div className={"card-body"}>
-
+                    <EarningChart/>
                 </div>
             </div>
 
