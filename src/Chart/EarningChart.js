@@ -14,8 +14,7 @@ export class EarningChart extends React.Component {
         let n = !isFinite(+number) ? 0 : +number,
             prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
             sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep,
-            dec = (typeof dec_point === 'undefined') ? '.' : dec_point,
-            s = '',
+            dec = (typeof dec_point === 'undefined') ? '.' : dec_point, s,
             toFixedFix = function (n, prec) {
                 const k = Math.pow(10, prec);
                 return '' + Math.round(n * k) / k;
@@ -33,7 +32,7 @@ export class EarningChart extends React.Component {
     }
 
     componentDidMount() {
-        this.earningChart = new Chart(this.graphRef.current, {
+        new Chart(this.graphRef.current, {
             type: 'line',
             data: {
                 labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
@@ -113,7 +112,7 @@ export class EarningChart extends React.Component {
                     caretPadding: 10,
                     callbacks: {
                         label: function (tooltipItem, chart) {
-                            var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
+                            const datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
                             return datasetLabel + ': $' + EarningChart.number_format(tooltipItem.yLabel);
                         }
                     }
