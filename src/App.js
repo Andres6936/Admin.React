@@ -11,7 +11,7 @@ import {EarningOverview} from "./Object/EarningOverview";
 import {Card} from "./Component/Card";
 import {CardHeader} from "./Component/CardHeader";
 import {CardBody} from "./Component/CardBody";
-import {Progress} from "./Component/Progress";
+import {ProgressBar} from "./Object/ProgressBar";
 
 function App() {
     return (
@@ -32,21 +32,11 @@ function App() {
 
                 </CardHeader>
                 <CardBody>
-                    <p className={"text-muted mb-1 small"}>Server Migration <span className={"float-end"}>13%</span></p>
-                    <Progress percentage={13} colorBar={"bg-primary"}/>
-
-                    <p className={"text-muted mb-1 small"}>Sales Tracking <span className={"float-end"}>25%</span></p>
-                    <Progress percentage={25} colorBar={"bg-success"}/>
-
-                    <p className={"text-muted mb-1 small"}>Customer Database <span className={"float-end"}>50%</span>
-                    </p>
-                    <Progress percentage={50} colorBar={"bg-info"}/>
-
-                    <p className={"text-muted mb-1 small"}>Payout Details <span className={"float-end"}>75%</span></p>
-                    <Progress percentage={75} colorBar={"bg-warning"}/>
-
-                    <p className={"text-muted mb-1 small"}>Account Setup <span className={"float-end"}>100%</span></p>
-                    <Progress percentage={100} colorBar={"bg-danger"}/>
+                    <ProgressBar title={"Server Migration"} percentage={13} colorBar={"bg-primary"}/>
+                    <ProgressBar title={"Sales Tracking"} percentage={25} colorBar={"bg-success"}/>
+                    <ProgressBar title={"Customer Database"} percentage={50} colorBar={"bg-info"}/>
+                    <ProgressBar title={"Payout Details"} percentage={75} colorBar={"bg-warning"}/>
+                    <ProgressBar title={"Account Setup"} percentage={100} colorBar={"bg-danger"}/>
                 </CardBody>
             </Card>
         </div>
