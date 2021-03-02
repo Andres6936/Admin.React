@@ -8,6 +8,8 @@ import {ChatIcon} from "./Icon/Chat";
 import {ResumeCardProgress} from "./Object/ResumeCardProgress";
 import {EarningOverviewChart} from "./Chart/EarningOverviewChart";
 import {RevenueSourcesChart} from "./Chart/RevenueSourcesChart";
+import {Card} from "./Component/Card";
+import {CardBody} from "./Component/CardBody";
 
 function App() {
     return (
@@ -20,7 +22,7 @@ function App() {
                                 colorBar={"bg-info"}/>
             <ResumeCard title={"PENDING REQUESTS"} text={"18"} icon={<ChatIcon/>} color={"text-warning"}/>
 
-            <div className={"card mb-4"}>
+            <Card>
                 <div className={"card-header text-primary bg-white fw-bold"}>
                     Earnings Overview
 
@@ -40,12 +42,12 @@ function App() {
                     </div>
                 </div>
 
-                <div className={"card-body"}>
+                <CardBody>
                     <EarningOverviewChart/>
-                </div>
-            </div>
+                </CardBody>
+            </Card>
 
-            <div className={"card mb-4"}>
+            <Card>
                 <div className={"card-header text-primary bg-white fw-bold"}>
                     Revenue Sources
 
@@ -65,7 +67,7 @@ function App() {
                     </div>
                 </div>
 
-                <div className={"card-body mt-3"}>
+                <CardBody>
                     <div>
                         <RevenueSourcesChart/>
                     </div>
@@ -75,8 +77,8 @@ function App() {
                         <span className={"col-4"}><span className={"text-success"}>&#9679;</span> Social</span>
                         <span className={"col-4"}><span className={"text-info"}>&#9679;</span> Referral</span>
                     </div>
-                </div>
-            </div>
+                </CardBody>
+            </Card>
         </div>
     );
 }
