@@ -40,8 +40,9 @@ function App() {
                         </svg>
                     </a>
 
-                    <div className={"dropdown-menu dropdown-menu-start"} aria-labelledby={"admin-search-dropdown"}>
-                        <form className={"input-group px-2"}>
+                    <div className={"dropdown-menu dropdown-menu-start w-100 mt-3"}
+                         aria-labelledby={"admin-search-dropdown"}>
+                        <form className={"input-group p-2"}>
                             <input className={"form-control"} type={"search"} placeholder={"Search for ...."}
                                    aria-label="Search"/>
                             <button type={"send"} className={"btn btn-primary"}>
