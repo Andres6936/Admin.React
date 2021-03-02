@@ -7,6 +7,7 @@ import {BookIcon} from "./Icon/Book";
 import {ChatIcon} from "./Icon/Chat";
 import {ResumeCardProgress} from "./Object/ResumeCardProgress";
 import {EarningChart} from "./Chart/EarningChart";
+import {RevenueSourcesChart} from "./Chart/RevenueSources";
 
 function App() {
     return (
@@ -40,6 +41,34 @@ function App() {
                 </div>
             </div>
 
+            <div className={"card mb-4"}>
+                <div className={"card-header text-primary bg-white fw-bold"}>
+                    Revenue Sources
+
+                    <div className={"dropdown float-end"}>
+                        <a className="dropdown-toggle text-muted" type="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                        </a>
+                        <ul className="dropdown-menu">
+                            <li><a className="dropdown-item" href="#">Action</a></li>
+                            <li><a className="dropdown-item" href="#">Another action</a></li>
+                            <li><a className="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className={"card-body mt-3"}>
+                    <div>
+                        <RevenueSourcesChart/>
+                    </div>
+
+                    <div className={"row mt-4 text-center text-muted text-nowrap"}>
+                        <span className={"col-4"}><span className={"text-primary"}>&#9679;</span> Direct</span>
+                        <span className={"col-4"}><span className={"text-success"}>&#9679;</span> Social</span>
+                        <span className={"col-4"}><span className={"text-info"}>&#9679;</span> Referral</span>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
