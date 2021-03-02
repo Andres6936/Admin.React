@@ -1,4 +1,7 @@
 import './App.css';
+
+import React from 'react';
+
 import UnDraw from './Undraw.svg';
 
 import {CalendarIcon} from "./Icon/Calendar";
@@ -15,7 +18,22 @@ import {CardBody} from "./Component/CardBody";
 import {CardHeader} from "./Component/CardHeader";
 
 function App() {
-    return (
+    return <React.Fragment>
+        <nav className={"nav navbar-expand navbar-light bg-white"}>
+            <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li className="nav-item">
+                <a className="nav-link" href="#">Link</a>
+            </li>
+            <li className="nav-item">
+                <a className="nav-link" href="#">Link</a>
+            </li>
+            <li className="nav-item">
+                <a className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true">Disabled</a>
+            </li>
+        </nav>
+
         <div className="container-fluid bg-light">
             <h1 className={"text-muted py-3"}>Dashboard</h1>
 
@@ -109,20 +127,20 @@ function App() {
                         Bootstrap framework, especially the utility classes.</p>
                 </CardBody>
             </Card>
-
-            <footer className={"text-center text-muted py-5 bg-white"}>
-                Copyright © Your Website 2020
-            </footer>
-
-            <div className={"fixed-bottom mb-4 me-4 text-end d-none"}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                     className="bi bi-arrow-up-circle text-muted" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                          d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-                </svg>
-            </div>
         </div>
-    );
+
+        <footer className={"text-center text-muted py-5 bg-white"}>
+            Copyright © Your Website 2020
+        </footer>
+
+        <div className={"fixed-bottom mb-4 me-4 text-end d-none"}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                 className="bi bi-arrow-up-circle text-muted" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                      d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+            </svg>
+        </div>
+    </React.Fragment>
 }
 
 export default App;
