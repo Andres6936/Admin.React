@@ -34,7 +34,7 @@ function App() {
             </li>
         </nav>
 
-        <div className="container-fluid bg-light">
+        <div className="container-fluid bg-light pb-4">
             <h1 className={"text-muted py-3"}>Dashboard</h1>
 
             <ResumeCard title={"EARNINGS (MONTHLY)"} text={"$40,000"} icon={<CalendarIcon/>} color={"text-primary"}/>
@@ -129,7 +129,7 @@ function App() {
             </Card>
         </div>
 
-        <footer className={"text-center text-muted py-5 bg-white"}>
+        <footer className={"text-center text-muted py-4 bg-white small"}>
             Copyright © Your Website 2020
         </footer>
 
