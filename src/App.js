@@ -21,7 +21,7 @@ function App() {
             <ResumeCard title={"PENDING REQUESTS"} text={"18"} icon={<ChatIcon/>} color={"text-warning"}/>
 
             <div className={"card mb-4"}>
-                <div className={"card-header text-primary bg-light fw-bold"}>
+                <div className={"card-header text-primary bg-white fw-bold"}>
                     Earnings Overview
 
                     <div className={"dropdown float-end"}>
