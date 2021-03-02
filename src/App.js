@@ -8,6 +8,9 @@ import {ChatIcon} from "./Icon/Chat";
 import {ResumeCardProgress} from "./Object/ResumeCardProgress";
 import {RevenueSources} from "./Object/RevenueSources";
 import {EarningOverview} from "./Object/EarningOverview";
+import {Card} from "./Component/Card";
+import {CardHeader} from "./Component/CardHeader";
+import {CardBody} from "./Component/CardBody";
 
 function App() {
     return (
@@ -22,6 +25,54 @@ function App() {
 
             <EarningOverview/>
             <RevenueSources/>
+
+            <Card>
+                <CardHeader title={"Projects"}>
+
+                </CardHeader>
+                <CardBody>
+                    <p className={"text-muted mb-1 small"}>Server Migration</p>
+                    <div className="progress mb-3">
+                        <div className="progress-bar bg-primary" role="progressbar" style={{width: "13%"}}
+                             aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+
+                        </div>
+                    </div>
+
+                    <p className={"text-muted mb-1 small"}>Sales Tracking</p>
+                    <div className="progress mb-3">
+                        <div className="progress-bar bg-success" role="progressbar" style={{width: "25%"}}
+                             aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+
+                        </div>
+                    </div>
+
+                    <p className={"text-muted mb-1 small"}>Customer Database</p>
+                    <div className="progress mb-3">
+                        <div className="progress-bar bg-info" role="progressbar" style={{width: "50%"}}
+                             aria-valuenow="50"
+                             aria-valuemin="0" aria-valuemax="100">
+
+                        </div>
+                    </div>
+
+                    <p className={"text-muted mb-1 small"}>Payout Details</p>
+                    <div className="progress mb-3">
+                        <div className="progress-bar bg-warning" role="progressbar" style={{width: "75%"}}
+                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+
+                        </div>
+                    </div>
+
+                    <p className={"text-muted mb-1 small"}>Account Setup</p>
+                    <div className="progress mb-3">
+                        <div className="progress-bar bg-danger" role="progressbar" style={{width: "100%"}}
+                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+
+                        </div>
+                    </div>
+                </CardBody>
+            </Card>
         </div>
     );
 }
