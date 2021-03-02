@@ -9,6 +9,8 @@ import {ResumeCardProgress} from "./Object/ResumeCardProgress";
 import {RevenueSources} from "./Object/RevenueSources";
 import {EarningOverview} from "./Object/EarningOverview";
 import {Projects} from "./Object/Projects";
+import {Card} from "./Component/Card";
+import {CardBody} from "./Component/CardBody";
 
 function App() {
     return (
@@ -25,6 +27,13 @@ function App() {
             <RevenueSources/>
 
             <Projects/>
+
+            <Card color={"bg-primary"}>
+                <CardBody>
+                    <p className={"text-primary mb-0"}>Primary</p>
+                    <p className={"text-muted mb-0"}>#4e73df</p>
+                </CardBody>
+            </Card>
         </div>
     );
 }
