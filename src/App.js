@@ -34,7 +34,7 @@ function App() {
                     <p className={"text-muted mb-1 small"}>Server Migration <span className={"float-end"}>13%</span></p>
                     <div className="progress mb-3">
                         <div className="progress-bar bg-primary" role="progressbar" style={{width: "13%"}}
-                             aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                             aria-valuenow="13" aria-valuemin="0" aria-valuemax="100">
 
                         </div>
                     </div>
