@@ -10,6 +10,7 @@ import {EarningOverviewChart} from "./Chart/EarningOverviewChart";
 import {RevenueSourcesChart} from "./Chart/RevenueSourcesChart";
 import {Card} from "./Component/Card";
 import {CardBody} from "./Component/CardBody";
+import {CardHeader} from "./Component/CardHeader";
 
 function App() {
     return (
@@ -23,9 +24,7 @@ function App() {
             <ResumeCard title={"PENDING REQUESTS"} text={"18"} icon={<ChatIcon/>} color={"text-warning"}/>
 
             <Card>
-                <div className={"card-header text-primary bg-white fw-bold"}>
-                    Earnings Overview
-
+                <CardHeader title={"Earnings Overview"}>
                     <div className={"dropdown float-end"}>
                         <a className="dropdown-toggle text-muted" type="button" data-bs-toggle="dropdown"
                            aria-expanded="false">
@@ -40,7 +39,7 @@ function App() {
                             <li><a className="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </div>
-                </div>
+                </CardHeader>
 
                 <CardBody>
                     <EarningOverviewChart/>
@@ -48,9 +47,7 @@ function App() {
             </Card>
 
             <Card>
-                <div className={"card-header text-primary bg-white fw-bold"}>
-                    Revenue Sources
-
+                <CardHeader title={"Revenue Sources"}>
                     <div className={"dropdown float-end"}>
                         <a className="dropdown-toggle text-muted" type="button" data-bs-toggle="dropdown"
                            aria-expanded="false">
@@ -65,7 +62,7 @@ function App() {
                             <li><a className="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </div>
-                </div>
+                </CardHeader>
 
                 <CardBody>
                     <div>
