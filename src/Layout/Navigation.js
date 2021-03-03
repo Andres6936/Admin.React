@@ -13,7 +13,7 @@ export class Navigation extends React.Component {
                     </svg>
                 </a>
 
-                <ul className={"nav my-3 justify-content-end"}>
+                <ul className={"nav justify-content-end"}>
                     <li className="nav-item">
                         <a className="nav-link" aria-current="page" href="#" role={"button"} data-bs-toggle={"dropdown"}
                            id={"admin-search-dropdown"}>
