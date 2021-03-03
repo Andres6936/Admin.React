@@ -49,7 +49,7 @@ function App() {
                 <ColorCard title={"Danger"} subtitle={"#4e73df"} backgroundColor={"bg-danger"}/>
                 <ColorCard title={"Secondary"} subtitle={"#4e73df"} backgroundColor={"bg-secondary"}/>
                 <ColorCard title={"Dark"} subtitle={"#4e73df"} backgroundColor={"bg-dark"}/>
-                <ColorCard title={"Ligth"} subtitle={"#4e73df"} backgroundColor={"bg-light"}
+                <ColorCard title={"Light"} subtitle={"#4e73df"} backgroundColor={"bg-light"}
                            foregroundColor={"text-muted"}/>
 
                 <Card>
