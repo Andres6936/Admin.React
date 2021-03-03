@@ -21,14 +21,15 @@ export class Navigation extends React.Component {
     render() {
         return (
             <nav className={"navbar-expand navbar-light bg-white shadow"}>
-                <a className="nav-link float-start" aria-current="page" href="#"
-                   onClick={() => this.props.hiddenSidebar(this.toggleSidebar())}>
+                <button className="nav-link float-start border-0" aria-current="page"
+                        style={{backgroundColor: "inherit"}}
+                        onClick={() => this.props.hiddenSidebar(this.toggleSidebar())}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                          className="bi bi-list text-muted" viewBox="0 0 16 16">
                         <path fillRule="evenodd"
                               d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                     </svg>
-                </a>
+                </button>
 
                 <ul className={"nav justify-content-end"}>
                     <li className="nav-item">
