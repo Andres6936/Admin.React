@@ -19,6 +19,7 @@ import {CardHeader} from "./Component/CardHeader";
 import {Navigation} from "./Layout/Navigation";
 import {Sidebar} from "./Layout/Sidebar";
 import {ColorCard} from "./Object/ColorCard";
+import {Illustrations} from "./Object/Illustrations";
 
 function App() {
     return <div className={"row"}>
@@ -52,18 +53,7 @@ function App() {
                 <ColorCard title={"Light"} subtitle={"#4e73df"} backgroundColor={"bg-light"}
                            foregroundColor={"text-muted"}/>
 
-                <Card>
-                    <CardHeader title={"Illustrations"}/>
-                    <CardBody>
-                        <img className={"img-fluid my-4"} src={UnDraw} alt={"Illustrations"}/>
-                        <p className={"text-muted"}>Add some quality, svg illustrations to your project courtesy of
-                            <a href={"https://undraw.co/"} className={"text-decoration-none"}> unDraw</a>, a
-                            constantly updated collection of beautiful svg images that you can use
-                            completely free and without attribution!</p>
-                        <a href={"https://undraw.co/"} className={"text-decoration-none"}>Browse Illustrations on
-                            unDraw</a>
-                    </CardBody>
-                </Card>
+                <Illustrations/>
 
                 <Card>
                     <CardHeader title={"Development Approach"}/>
