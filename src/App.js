@@ -17,11 +17,26 @@ import {DevelopmentApproach} from "./Object/DevelopmentApproach";
 import {Footer} from "./Layout/Footer";
 
 export default class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            hiddenSidebar: true
+        }
+    }
+
+    isHiddenSidebar() {
+        return this.state.hiddenSidebar;
+    }
+
+    expandMainContent() {
+        return this.isHiddenSidebar() ? "col-12" : "col-9";
+    }
+
     render() {
         return <div className={"row m-0 p-0"}>
-            <Sidebar/>
+            <Sidebar hidden={true}/>
 
-            <div className={"col-9 p-0 m-0"}>
+            <div className={this.expandMainContent() + " p-0 m-0"}>
                 <Navigation/>
 
                 <div className="container-fluid bg-light pb-4">
