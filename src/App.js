@@ -20,7 +20,7 @@ import {Navigation} from "./Layout/Navigation";
 
 function App() {
     return <div className={"row"}>
-        <section className={"col-4 bg-primary p-0"}>
+        <section className={"col-3 bg-primary p-0"}>
             <div className={"text-center my-3 py-3 border-bottom"}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                      className="bi bi-emoji-wink-fill text-white" viewBox="0 0 16 16">
@@ -30,7 +30,7 @@ function App() {
             </div>
         </section>
 
-        <div className={"col-8"}>
+        <div className={"col-9"}>
             <Navigation/>
 
             <div className="container-fluid bg-light pb-4">
