@@ -11,7 +11,7 @@ import {TableIcon} from "../Icon/Table";
 export class Sidebar extends React.Component {
     render() {
         return <section className={"col-3 bg-primary p-0 m-0"}>
-            <ul className={"list-group text-center my-3"}>
+            <ul className={"list-group text-center my-3 sticky-top"}>
                 <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}}>
                     <EmojiWinkFillIcon/>
                 </a>
