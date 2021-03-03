@@ -75,7 +75,7 @@ export class Sidebar extends React.Component {
             <hr className={"text-white mx-3 my-1"}/>
 
             <button className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}}
-                    onClick={() => this.props.hiddenSidebar(this.toggleSidebar())}>
+                    onClick={() => this.props.setStatusSidebar(this.toggleSidebar())}>
                 <ArrowLeftCircleFillIcon/>
             </button>
         </ul>

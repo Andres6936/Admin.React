@@ -45,11 +45,11 @@ export default class App extends React.Component {
     render() {
         return <div className={"row m-0 p-0"}>
             <div className={this.expandSidebar() + " col-3 bg-primary p-0 m-0"}>
-                <Sidebar hiddenSidebar={this.hiddenSidebar}/>
+                <Sidebar setStatusSidebar={this.hiddenSidebar}/>
             </div>
 
             <div className={this.expandMainContent() + " p-0 m-0"}>
-                <Navigation hiddenSidebar={this.hiddenSidebar}/>
+                <Navigation setStatusSidebar={this.hiddenSidebar}/>
 
                 <div className="container-fluid bg-light pb-4">
                     <h1 className={"text-muted py-3"}>Dashboard</h1>

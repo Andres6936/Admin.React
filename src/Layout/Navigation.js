@@ -23,7 +23,7 @@ export class Navigation extends React.Component {
             <nav className={"navbar-expand navbar-light bg-white shadow"}>
                 <button className="nav-link float-start border-0" aria-current="page"
                         style={{backgroundColor: "inherit"}}
-                        onClick={() => this.props.hiddenSidebar(this.toggleSidebar())}>
+                        onClick={() => this.props.setStatusSidebar(this.toggleSidebar())}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                          className="bi bi-list text-muted" viewBox="0 0 16 16">
                         <path fillRule="evenodd"
