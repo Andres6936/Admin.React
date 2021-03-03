@@ -25,7 +25,7 @@ export class HandleSidebar extends React.Component {
      * is hidden, if is false the state of sidebar is show.
      */
     toggleSidebar() {
-        let currentStateSidebar = this.state.hiddenSidebar;
+        const currentStateSidebar = this.state.hiddenSidebar;
         this.setState({hiddenSidebar: !currentStateSidebar})
         return this.state.hiddenSidebar;
     }
