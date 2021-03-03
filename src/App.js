@@ -22,6 +22,12 @@ export default class App extends React.Component {
         this.state = {
             hiddenSidebar: true
         }
+
+        this.hiddenSidebar = this.hiddenSidebar.bind(this);
+    }
+
+    hiddenSidebar(hidden) {
+        this.setState({hiddenSidebar: hidden})
     }
 
     isHiddenSidebar() {
@@ -37,7 +43,7 @@ export default class App extends React.Component {
             <Sidebar hidden={true}/>
 
             <div className={this.expandMainContent() + " p-0 m-0"}>
-                <Navigation/>
+                <Navigation hiddenSidebar={this.hiddenSidebar}/>
 
                 <div className="container-fluid bg-light pb-4">
                     <h1 className={"text-muted py-3"}>Dashboard</h1>

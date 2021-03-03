@@ -5,7 +5,8 @@ export class Navigation extends React.Component {
     render() {
         return (
             <nav className={"navbar-expand navbar-light bg-white shadow"}>
-                <a className="nav-link float-start" aria-current="page" href="#">
+                <a className="nav-link float-start" aria-current="page" href="#"
+                   onClick={() => this.props.hiddenSidebar(false)}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                          className="bi bi-list text-muted" viewBox="0 0 16 16">
                         <path fillRule="evenodd"
