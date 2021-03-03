@@ -1,17 +1,16 @@
 import React from 'react';
 
 /**
- * @function setStatusSidebar {function(boolean) -> void} Set the state of
- * sidebar, if the parameter send to method is true the state of sidebar is
- * hidden, if the parameter send to method is false the state of sidebar is
- * show, for default the state of sidebar is show.
+ * Store the state of sidebar, if this state is hidden the variable
+ * hiddenSidebar is true, if the state of sidebar is show the variable
+ * hiddenSidebar is false.
  */
 export class HandleSidebar extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            // The state for default of sidebar is hidden.
+            // @type {boolean} The state for default of sidebar is hidden.
             hiddenSidebar: true
         }
 
@@ -25,6 +24,7 @@ export class HandleSidebar extends React.Component {
      * is hidden, if is false the state of sidebar is show.
      */
     toggleSidebar() {
+        // @type {boolean} Get the current status of sidebar
         const currentStateSidebar = this.state.hiddenSidebar;
         this.setState({hiddenSidebar: !currentStateSidebar})
         return this.state.hiddenSidebar;

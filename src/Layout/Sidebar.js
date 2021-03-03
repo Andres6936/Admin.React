@@ -10,6 +10,14 @@ import {TableIcon} from "../Icon/Table";
 import {ArrowLeftCircleFillIcon} from "../Icon/ArrowLeftCircleFill";
 import {HandleSidebar} from "./HandleSidebar";
 
+/**
+ * @see {HandleSidebar}
+ *
+ * @param setStatusSidebar {function(boolean)} Set the state of
+ * sidebar, if the parameter send to method is true the state of sidebar is
+ * hidden, if the parameter send to method is false the state of sidebar is
+ * show, for default the state of sidebar is show.
+ */
 export class Sidebar extends HandleSidebar {
     render() {
         return <ul className={"list-group text-center pt-3 sticky-top"}>

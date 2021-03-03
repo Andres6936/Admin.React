@@ -2,6 +2,14 @@ import React from 'react';
 import UnDrawProfile from "../UndrawProfile.svg";
 import {HandleSidebar} from "./HandleSidebar";
 
+/**
+ * @see {HandleSidebar}
+ *
+ * @param setStatusSidebar {function(boolean)} Set the state of
+ * sidebar, if the parameter send to method is true the state of sidebar is
+ * hidden, if the parameter send to method is false the state of sidebar is
+ * show, for default the state of sidebar is show.
+ */
 export class Navigation extends HandleSidebar {
     render() {
         return (
