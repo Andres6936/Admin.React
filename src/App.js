@@ -65,7 +65,7 @@ function App() {
                         </svg>
                     </a>
 
-                    <div className={"dropdown-menu dropdown-menu-start w-100 mt-3"}
+                    <div className={"dropdown-menu dropdown-menu-start w-100 pb-0 mt-3"}
                          aria-labelledby={"admin-bell-dropdown"}>
                         <h6 className={"dropdown-header border-bottom w-100"}>ALERTS CENTER</h6>
 
