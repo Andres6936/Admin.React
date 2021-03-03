@@ -2,6 +2,9 @@ import React from 'react';
 
 /**
  * Wrapper around of SVG tag.
+ *
+ * @param size {number} (Default: 16) Set the size (width and height) of svg.
+ * @param className {string} (Optional) Set the extra class for this svg.
  */
 export class SVG extends React.Component {
     render() {
