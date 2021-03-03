@@ -68,8 +68,9 @@ function App() {
                     <div className={"dropdown-menu dropdown-menu-start w-100 mt-3"}
                          aria-labelledby={"admin-bell-dropdown"}>
                         <form className={"input-group p-2"}>
-                            <h6 className={"dropdown-header"}>ALERTS CENTER</h6>
-                            <a className={"dropdown-item"}>
+                            <h6 className={"dropdown-header border-bottom w-100"}>ALERTS CENTER</h6>
+
+                            <a className={"dropdown-item border-bottom mt-2"}>
                                 <div className={"row row-cols-2 d-flex align-items-center"}>
                                     <div className={"col-3 text-center"}>
                                         <div className={"rounded-circle bg-primary py-2 mx-1"}>
@@ -88,7 +89,7 @@ function App() {
                                     </div>
                                 </div>
                             </a>
-                            <a className={"dropdown-item"}>
+                            <a className={"dropdown-item border-bottom mt-2"}>
                                 <div className={"row row-cols-2 d-flex align-items-center"}>
                                     <div className={"col-3 text-center"}>
                                         <div className={"rounded-circle bg-success py-2 mx-1"}>
