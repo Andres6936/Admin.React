@@ -45,7 +45,7 @@ export default class App extends React.Component {
     render() {
         return <div className={"row m-0 p-0"}>
             <div className={this.expandSidebar() + " col-3 bg-primary p-0 m-0"}>
-                <Sidebar/>
+                <Sidebar hiddenSidebar={this.hiddenSidebar}/>
             </div>
 
             <div className={this.expandMainContent() + " p-0 m-0"}>

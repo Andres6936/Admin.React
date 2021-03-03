@@ -10,6 +10,22 @@ import {TableIcon} from "../Icon/Table";
 import {ArrowLeftCircleFillIcon} from "../Icon/ArrowLeftCircleFill";
 
 export class Sidebar extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            hiddenSidebar: true
+        }
+
+        this.toggleSidebar = this.toggleSidebar.bind(this);
+    }
+
+    toggleSidebar() {
+        let currentStateSidebar = this.state.hiddenSidebar;
+        this.setState({hiddenSidebar: !currentStateSidebar})
+        return this.state.hiddenSidebar;
+    }
+
     render() {
         return <ul className={"list-group text-center pt-3 sticky-top"}>
             <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}}>
@@ -58,7 +74,8 @@ export class Sidebar extends React.Component {
 
             <hr className={"text-white mx-3 my-1"}/>
 
-            <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}}>
+            <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}}
+               onClick={() => this.props.hiddenSidebar(this.toggleSidebar())}>
                 <ArrowLeftCircleFillIcon/>
             </a>
         </ul>
