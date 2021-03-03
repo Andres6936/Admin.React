@@ -72,7 +72,7 @@ function App() {
                             <a className={"dropdown-item"}>
                                 <div className={"row row-cols-2 d-flex align-items-center"}>
                                     <div className={"col-3 text-center"}>
-                                        <div className={"rounded-circle bg-primary py-2"}>
+                                        <div className={"rounded-circle bg-primary py-2 mx-1"}>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                  fill="currentColor" className="bi bi-file-earmark-text-fill text-white"
                                                  viewBox="0 0 16 16">
