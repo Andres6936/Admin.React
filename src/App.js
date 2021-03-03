@@ -33,7 +33,7 @@ function App() {
             </ul>
         </section>
 
-        <div className={"col-9"}>
+        <div className={"col-9 p-0 m-0"}>
             <Navigation/>
 
             <div className="container-fluid bg-light pb-4">
