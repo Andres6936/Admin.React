@@ -131,8 +131,8 @@ function App() {
                                     </div>
                                 </div>
                             </a>
-                            <a className={"dropdown-item"}>
-
+                            <a className={"dropdown-item text-center mb-0"}>
+                                <span className={"small text-muted"}>Show All Alerts</span>
                             </a>
                         </form>
                     </div>
