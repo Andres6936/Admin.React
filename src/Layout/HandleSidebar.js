@@ -11,6 +11,7 @@ export class HandleSidebar extends React.Component {
         super(props);
 
         this.state = {
+            // The state for default of sidebar is hidden.
             hiddenSidebar: true
         }
 
