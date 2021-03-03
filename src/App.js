@@ -18,6 +18,7 @@ import {CardBody} from "./Component/CardBody";
 import {CardHeader} from "./Component/CardHeader";
 import {Navigation} from "./Layout/Navigation";
 import {Sidebar} from "./Layout/Sidebar";
+import {ColorCard} from "./Object/ColorCard";
 
 function App() {
     return <div className={"row"}>
@@ -41,59 +42,18 @@ function App() {
 
                 <Projects/>
 
-                <Card color={"bg-primary"}>
-                    <CardBody>
-                        <p className={"text-white mb-0"}>Primary</p>
-                        <p className={"text-white-50 mb-0 small"}>#4e73df</p>
-                    </CardBody>
-                </Card>
-
-                <Card color={"bg-success"}>
-                    <CardBody>
-                        <p className={"text-white mb-0"}>Success</p>
-                        <p className={"text-white-50 mb-0 small"}>#4e73df</p>
-                    </CardBody>
-                </Card>
-
-                <Card color={"bg-info"}>
-                    <CardBody>
-                        <p className={"text-white mb-0"}>Info</p>
-                        <p className={"text-white-50 mb-0 small"}>#4e73df</p>
-                    </CardBody>
-                </Card>
-
-                <Card color={"bg-warning"}>
-                    <CardBody>
-                        <p className={"text-white mb-0"}>Warning</p>
-                        <p className={"text-white-50 mb-0 small"}>#4e73df</p>
-                    </CardBody>
-                </Card>
-
-                <Card color={"bg-danger"}>
-                    <CardBody>
-                        <p className={"text-white mb-0"}>Danger</p>
-                        <p className={"text-white-50 mb-0 small"}>#4e73df</p>
-                    </CardBody>
-                </Card>
-
-                <Card color={"bg-secondary"}>
-                    <CardBody>
-                        <p className={"text-white mb-0"}>Secondary</p>
-                        <p className={"text-white-50 mb-0 small"}>#4e73df</p>
-                    </CardBody>
-                </Card>
+                <ColorCard title={"Primary"} subtitle={"#4e73df"} backgroundColor={"bg-primary"}/>
+                <ColorCard title={"Success"} subtitle={"#4e73df"} backgroundColor={"bg-success"}/>
+                <ColorCard title={"Info"} subtitle={"#4e73df"} backgroundColor={"bg-info"}/>
+                <ColorCard title={"Warning"} subtitle={"#4e73df"} backgroundColor={"bg-warning"}/>
+                <ColorCard title={"Danger"} subtitle={"#4e73df"} backgroundColor={"bg-danger"}/>
+                <ColorCard title={"Secondary"} subtitle={"#4e73df"} backgroundColor={"bg-secondary"}/>
+                <ColorCard title={"Dark"} subtitle={"#4e73df"} backgroundColor={"bg-dark"}/>
 
                 <Card color={"bg-light"}>
                     <CardBody>
                         <p className={"text-muted mb-0"}>Secondary</p>
                         <p className={"text-muted mb-0 small"}>#4e73df</p>
-                    </CardBody>
-                </Card>
-
-                <Card color={"bg-dark"}>
-                    <CardBody>
-                        <p className={"text-white mb-0"}>Secondary</p>
-                        <p className={"text-white-50 mb-0 small"}>#4e73df</p>
                     </CardBody>
                 </Card>
 
