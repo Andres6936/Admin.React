@@ -70,16 +70,16 @@ function App() {
                         <form className={"input-group p-2"}>
                             <h6 className={"dropdown-header"}>ALERTS CENTER</h6>
                             <a className={"dropdown-item"}>
-                                <div className={"row row-cols-2"}>
+                                <div className={"row row-cols-2 d-flex align-items-center"}>
                                     <div className={"col-3 text-center"}>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                             fill="currentColor"
-                                             className="bi bi-file-earmark-text" viewBox="0 0 16 16">
-                                            <path
-                                                d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
-                                            <path
-                                                d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
-                                        </svg>
+                                        <div className={"rounded-circle bg-primary py-2"}>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="currentColor" className="bi bi-file-earmark-text-fill text-white"
+                                                 viewBox="0 0 16 16">
+                                                <path
+                                                    d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1h-4z"/>
+                                            </svg>
+                                        </div>
                                     </div>
                                     <div className={"col-9"}>
                                         <p className={"small text-black-50 mb-0"}>December 12, 2019</p>
