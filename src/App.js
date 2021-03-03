@@ -21,6 +21,7 @@ import {Sidebar} from "./Layout/Sidebar";
 import {ColorCard} from "./Object/ColorCard";
 import {Illustrations} from "./Object/Illustrations";
 import {DevelopmentApproach} from "./Object/DevelopmentApproach";
+import {Footer} from "./Layout/Footer";
 
 function App() {
     return <div className={"row"}>
@@ -57,9 +58,7 @@ function App() {
                 <DevelopmentApproach/>
             </div>
 
-            <footer className={"text-center text-muted py-4 bg-white small"}>
-                Copyright © Your Website 2020
-            </footer>
+            <Footer/>
 
             <div className={"fixed-bottom mb-4 me-4 text-end d-none"}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
