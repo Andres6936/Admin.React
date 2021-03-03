@@ -23,17 +23,19 @@ export default class App extends React.Component {
             hiddenSidebar: true
         }
 
-        this.sidebarElement = React.createRef();
         this.hiddenSidebar = this.hiddenSidebar.bind(this);
     }
 
     hiddenSidebar(hidden) {
         this.setState({hiddenSidebar: hidden})
-        this.sidebarElement.current.toggleSidebar(hidden);
     }
 
     isHiddenSidebar() {
         return this.state.hiddenSidebar;
+    }
+
+    expandSidebar() {
+        return this.isHiddenSidebar() ? "d-none" : "";
     }
 
     expandMainContent() {
@@ -42,7 +44,9 @@ export default class App extends React.Component {
 
     render() {
         return <div className={"row m-0 p-0"}>
-            <Sidebar ref={this.sidebarElement}/>
+            <div className={this.expandSidebar() + " col-3 bg-primary p-0 m-0"}>
+                <Sidebar/>
+            </div>
 
             <div className={this.expandMainContent() + " p-0 m-0"}>
                 <Navigation hiddenSidebar={this.hiddenSidebar}/>
