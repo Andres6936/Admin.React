@@ -2,11 +2,27 @@ import React from 'react';
 import UnDrawProfile from "../UndrawProfile.svg";
 
 export class Navigation extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            hiddenSidebar: true
+        }
+
+        this.toggleSidebar = this.toggleSidebar.bind(this);
+    }
+
+    toggleSidebar() {
+        let currentStateSidebar = this.state.hiddenSidebar;
+        this.setState({hiddenSidebar: !currentStateSidebar})
+        return this.state.hiddenSidebar;
+    }
+
     render() {
         return (
             <nav className={"navbar-expand navbar-light bg-white shadow"}>
                 <a className="nav-link float-start" aria-current="page" href="#"
-                   onClick={() => this.props.hiddenSidebar(false)}>
+                   onClick={() => this.props.hiddenSidebar(this.toggleSidebar())}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                          className="bi bi-list text-muted" viewBox="0 0 16 16">
                         <path fillRule="evenodd"
