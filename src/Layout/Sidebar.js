@@ -7,6 +7,7 @@ import {HammerIcon} from "../Icon/Hammer";
 import {FolderFillIcon} from "../Icon/FolderFill";
 import {GraphUpIcon} from "../Icon/GraphUp";
 import {TableIcon} from "../Icon/Table";
+import {ArrowLeftCircleFillIcon} from "../Icon/ArrowLeftCircleFill";
 
 export class Sidebar extends React.Component {
     render() {
@@ -57,6 +58,10 @@ export class Sidebar extends React.Component {
                 </a>
 
                 <hr className={"text-white mx-3 my-1"}/>
+
+                <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}}>
+                    <ArrowLeftCircleFillIcon/>
+                </a>
             </ul>
         </section>
     }
