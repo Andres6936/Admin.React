@@ -3,7 +3,7 @@ import React from 'react';
 /**
  * Wrapper around of Card component Bootstrap 5.
  *
- * @param color {string} Set the background color for this Card. This property is optional.
+ * @param color {string} (Optional) Set the background color for this Card.
  */
 export class Card extends React.Component {
 
