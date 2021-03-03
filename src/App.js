@@ -67,74 +67,72 @@ function App() {
 
                     <div className={"dropdown-menu dropdown-menu-start w-100 mt-3"}
                          aria-labelledby={"admin-bell-dropdown"}>
-                        <form className={"input-group p-2"}>
-                            <h6 className={"dropdown-header border-bottom w-100"}>ALERTS CENTER</h6>
+                        <h6 className={"dropdown-header border-bottom w-100"}>ALERTS CENTER</h6>
 
-                            <a className={"dropdown-item border-bottom mt-2"}>
-                                <div className={"row row-cols-2 d-flex align-items-center"}>
-                                    <div className={"col-3 text-center"}>
-                                        <div className={"rounded-circle bg-primary py-2 mx-1"}>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                 fill="currentColor" className="bi bi-file-earmark-text-fill text-white"
-                                                 viewBox="0 0 16 16">
-                                                <path
-                                                    d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1h-4z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div className={"col-9"}>
-                                        <p className={"small text-black-50 mb-0"}>December 12, 2019</p>
-                                        <p className={"small fw-bold text-muted text-wrap"}>A new monthly report is
-                                            ready to
-                                            download!</p>
+                        <a className={"dropdown-item border-bottom mt-2"}>
+                            <div className={"row row-cols-2 d-flex align-items-center"}>
+                                <div className={"col-3 text-center"}>
+                                    <div className={"rounded-circle bg-primary py-2 mx-1"}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor" className="bi bi-file-earmark-text-fill text-white"
+                                             viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1h-4z"/>
+                                        </svg>
                                     </div>
                                 </div>
-                            </a>
-                            <a className={"dropdown-item border-bottom mt-2"}>
-                                <div className={"row row-cols-2 d-flex align-items-center"}>
-                                    <div className={"col-3 text-center"}>
-                                        <div className={"rounded-circle bg-success py-2 mx-1"}>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                 fill="currentColor"
-                                                 className="bi bi-credit-card-2-back-fill text-white"
-                                                 viewBox="0 0 16 16">
-                                                <path
-                                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0V4zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2zM0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1H0z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div className={"col-9"}>
-                                        <p className={"small text-black-50 mb-0"}>December 7, 2019</p>
-                                        <p className={"small fw-bold text-muted text-wrap"}>$290.29 has been deposited
-                                            into your
-                                            account!</p>
+                                <div className={"col-9"}>
+                                    <p className={"small text-black-50 mb-0"}>December 12, 2019</p>
+                                    <p className={"small fw-bold text-muted text-wrap"}>A new monthly report is
+                                        ready to
+                                        download!</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a className={"dropdown-item border-bottom mt-2"}>
+                            <div className={"row row-cols-2 d-flex align-items-center"}>
+                                <div className={"col-3 text-center"}>
+                                    <div className={"rounded-circle bg-success py-2 mx-1"}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor"
+                                             className="bi bi-credit-card-2-back-fill text-white"
+                                             viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0V4zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2zM0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1H0z"/>
+                                        </svg>
                                     </div>
                                 </div>
-                            </a>
-                            <a className={"dropdown-item border-bottom mt-2"}>
-                                <div className={"row row-cols-2 d-flex align-items-center"}>
-                                    <div className={"col-3 text-center"}>
-                                        <div className={"rounded-circle bg-warning py-2 mx-1"}>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                 fill="currentColor"
-                                                 className="bi bi-exclamation-triangle-fill text-white"
-                                                 viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div className={"col-9"}>
-                                        <p className={"small text-black-50 mb-0"}>December 2, 2019</p>
-                                        <p className={"small fw-bold text-muted text-wrap"}>Spending Alert: We've
-                                            noticed unusually high spending for your account.</p>
+                                <div className={"col-9"}>
+                                    <p className={"small text-black-50 mb-0"}>December 7, 2019</p>
+                                    <p className={"small fw-bold text-muted text-wrap"}>$290.29 has been deposited
+                                        into your
+                                        account!</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a className={"dropdown-item border-bottom mt-2"}>
+                            <div className={"row row-cols-2 d-flex align-items-center"}>
+                                <div className={"col-3 text-center"}>
+                                    <div className={"rounded-circle bg-warning py-2 mx-1"}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor"
+                                             className="bi bi-exclamation-triangle-fill text-white"
+                                             viewBox="0 0 16 16">
+                                            <path
+                                                d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                        </svg>
                                     </div>
                                 </div>
-                            </a>
-                            <a className={"dropdown-item text-center mb-0"}>
-                                <span className={"small text-muted"}>Show All Alerts</span>
-                            </a>
-                        </form>
+                                <div className={"col-9"}>
+                                    <p className={"small text-black-50 mb-0"}>December 2, 2019</p>
+                                    <p className={"small fw-bold text-muted text-wrap"}>Spending Alert: We've
+                                        noticed unusually high spending for your account.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a className={"dropdown-item text-center mb-0"}>
+                            <span className={"small text-muted"}>Show All Alerts</span>
+                        </a>
                     </div>
                 </li>
                 <li className="nav-item">
