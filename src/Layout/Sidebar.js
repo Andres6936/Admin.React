@@ -14,16 +14,18 @@ export class Sidebar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            hidden: this.props.hidden
+            hidden: true
         }
+
+        this.toggleSidebar = this.toggleSidebar.bind(this);
     }
 
-    isHidden() {
-        return this.state.hidden;
+    toggleSidebar(hidden) {
+        this.setState({hidden: hidden})
     }
 
     hiddenSidebar() {
-        return this.isHidden() ? "d-none" : "";
+        return this.state.hidden ? "d-none" : "";
     }
 
     render() {
