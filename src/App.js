@@ -56,13 +56,49 @@ function App() {
                     </div>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <a className="nav-link" href="#" role={"button"} data-bs-toggle={"dropdown"}
+                       id={"admin-bell-dropdown"}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                              className="bi bi-bell text-muted" viewBox="0 0 16 16">
                             <path
                                 d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
                         </svg>
                     </a>
+
+                    <div className={"dropdown-menu dropdown-menu-start w-100 mt-3"}
+                         aria-labelledby={"admin-bell-dropdown"}>
+                        <form className={"input-group p-2"}>
+                            <h6 className={"dropdown-header"}>ALERTS CENTER</h6>
+                            <a className={"dropdown-item"}>
+                                <div className={"row row-cols-2"}>
+                                    <div className={"col-3 text-center"}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor"
+                                             className="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                                            <path
+                                                d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                                        </svg>
+                                    </div>
+                                    <div className={"col-9"}>
+                                        <p className={"small text-black-50 mb-0"}>December 12, 2019</p>
+                                        <p className={"small fw-bold text-wrap"}>A new monthly report is ready to
+                                            download!</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a className={"dropdown-item"}>
+
+                            </a>
+                            <a className={"dropdown-item"}>
+
+                            </a>
+                            <a className={"dropdown-item"}>
+
+                            </a>
+                        </form>
+                    </div>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="#">
