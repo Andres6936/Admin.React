@@ -2,8 +2,6 @@ import './App.css';
 
 import React from 'react';
 
-import UnDraw from './Undraw.svg';
-
 import {CalendarIcon} from "./Icon/Calendar";
 import {ResumeCard} from "./Object/ResumeCard";
 import {BellIcon} from "./Icon/Bell";
@@ -13,9 +11,6 @@ import {ResumeCardProgress} from "./Object/ResumeCardProgress";
 import {RevenueSources} from "./Object/RevenueSources";
 import {EarningOverview} from "./Object/EarningOverview";
 import {Projects} from "./Object/Projects";
-import {Card} from "./Component/Card";
-import {CardBody} from "./Component/CardBody";
-import {CardHeader} from "./Component/CardHeader";
 import {Navigation} from "./Layout/Navigation";
 import {Sidebar} from "./Layout/Sidebar";
 import {ColorCard} from "./Object/ColorCard";
