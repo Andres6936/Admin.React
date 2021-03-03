@@ -49,13 +49,8 @@ function App() {
                 <ColorCard title={"Danger"} subtitle={"#4e73df"} backgroundColor={"bg-danger"}/>
                 <ColorCard title={"Secondary"} subtitle={"#4e73df"} backgroundColor={"bg-secondary"}/>
                 <ColorCard title={"Dark"} subtitle={"#4e73df"} backgroundColor={"bg-dark"}/>
-
-                <Card color={"bg-light"}>
-                    <CardBody>
-                        <p className={"text-muted mb-0"}>Secondary</p>
-                        <p className={"text-muted mb-0 small"}>#4e73df</p>
-                    </CardBody>
-                </Card>
+                <ColorCard title={"Ligth"} subtitle={"#4e73df"} backgroundColor={"bg-light"}
+                           foregroundColor={"text-muted"}/>
 
                 <Card>
                     <CardHeader title={"Illustrations"}/>
