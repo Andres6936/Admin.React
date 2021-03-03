@@ -20,16 +20,26 @@ export default class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            // @type {boolean} The state for default of sidebar is hidden.
             hiddenSidebar: true
         }
 
         this.hiddenSidebar = this.hiddenSidebar.bind(this);
     }
 
+    /**
+     * Change the status of sidebar. Hidden to show <-> Show to hidden.
+     *
+     * @param hidden If is true the state of sidebar change to hidden, if is
+     * false the state of sidebar change to show.
+     */
     hiddenSidebar(hidden) {
         this.setState({hiddenSidebar: hidden})
     }
 
+    /**
+     * @return {boolean} True if the state of statusbar is hidden, false otherwise.
+     */
     isHiddenSidebar() {
         return this.state.hiddenSidebar;
     }
