@@ -89,7 +89,24 @@ function App() {
                                 </div>
                             </a>
                             <a className={"dropdown-item"}>
-
+                                <div className={"row row-cols-2 d-flex align-items-center"}>
+                                    <div className={"col-3 text-center"}>
+                                        <div className={"rounded-circle bg-success py-2 mx-1"}>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="currentColor"
+                                                 className="bi bi-credit-card-2-back-fill text-white"
+                                                 viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0V4zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2zM0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1H0z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div className={"col-9"}>
+                                        <p className={"small text-black-50 mb-0"}>December 7, 2019</p>
+                                        <p className={"small fw-bold text-wrap"}>$290.29 has been deposited into your
+                                            account!</p>
+                                    </div>
+                                </div>
                             </a>
                             <a className={"dropdown-item"}>
 
