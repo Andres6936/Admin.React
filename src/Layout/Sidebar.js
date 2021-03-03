@@ -27,6 +27,8 @@ export class Sidebar extends React.Component {
 
                 <hr className={"text-white mx-3 my-1"}/>
 
+                <p className={"text-white-50 fw-bold mt-2 mb-0 small"} style={{fontSize: "11px"}}>INTERFACE</p>
+
                 <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                          className="bi bi-gear-fill text-white" viewBox="0 0 16 16">
@@ -35,8 +37,6 @@ export class Sidebar extends React.Component {
                     </svg>
                     <p className={"text-white fw-bold mt-2 mb-0"} style={{fontSize: "10px"}}>Components</p>
                 </a>
-
-                <hr className={"text-white mx-3 my-1"}/>
 
                 <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -49,6 +49,8 @@ export class Sidebar extends React.Component {
 
                 <hr className={"text-white mx-3 my-1"}/>
 
+                <p className={"text-white-50 fw-bold mt-2 mb-0 small"} style={{fontSize: "11px"}}>ADDONS</p>
+
                 <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                          className="bi bi-folder-fill text-white" viewBox="0 0 16 16">
@@ -58,8 +60,6 @@ export class Sidebar extends React.Component {
                     <p className={"text-white fw-bold mt-2 mb-0"} style={{fontSize: "10px"}}>Pages</p>
                 </a>
 
-                <hr className={"text-white mx-3 my-1"}/>
-
                 <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                          className="bi bi-graph-up text-white" viewBox="0 0 16 16">
@@ -68,8 +68,6 @@ export class Sidebar extends React.Component {
                     </svg>
                     <p className={"text-white fw-bold mt-2 mb-0"} style={{fontSize: "10px"}}>Charts</p>
                 </a>
-
-                <hr className={"text-white mx-3 my-1"}/>
 
                 <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
