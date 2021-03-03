@@ -17,7 +17,7 @@ import {DevelopmentApproach} from "./Object/DevelopmentApproach";
 import {Footer} from "./Layout/Footer";
 
 function App() {
-    return <div className={"row"}>
+    return <div className={"row m-0 p-0"}>
         <Sidebar/>
 
         <div className={"col-9 p-0 m-0"}>
