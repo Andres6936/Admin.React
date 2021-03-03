@@ -62,6 +62,17 @@ export class Sidebar extends React.Component {
 
                 <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                         className="bi bi-graph-up text-white" viewBox="0 0 16 16">
+                        <path fillRule="evenodd"
+                              d="M0 0h1v15h15v1H0V0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                    <p className={"text-white fw-bold mt-2 mb-0"} style={{fontSize: "10px"}}>Charts</p>
+                </a>
+
+                <hr className={"text-white mx-3 my-1"}/>
+
+                <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                          className="bi bi-table text-white" viewBox="0 0 16 16">
                         <path
                             d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
