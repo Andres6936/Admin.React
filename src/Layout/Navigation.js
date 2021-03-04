@@ -26,14 +26,15 @@ export class Navigation extends HandleSidebar {
 
                 <ul className={"nav justify-content-end"}>
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#" role={"button"} data-bs-toggle={"dropdown"}
-                           id={"admin-search-dropdown"}>
+                        <button className="nav-link border-0" type={"button"} aria-current="page"
+                                data-bs-toggle={"dropdown"}
+                                id={"admin-search-dropdown"} style={{backgroundColor: "inherit"}}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                  className="bi bi-search text-muted" viewBox="0 0 16 16">
                                 <path
                                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                             </svg>
-                        </a>
+                        </button>
 
                         <div className={"dropdown-menu dropdown-menu-start w-100 mt-3"}
                              aria-labelledby={"admin-search-dropdown"}>
