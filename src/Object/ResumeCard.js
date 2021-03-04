@@ -4,9 +4,21 @@ import {Row} from "../Component/Row";
 import {Card} from "../Component/Card";
 import {CardBody} from "../Component/CardBody";
 
+/**
+ * @param {number} borderWidth (Optional) The border width of this component.
+ */
 export class ResumeCard extends React.Component {
+
+    /**
+     * @return {string} The border width of this component, the possible
+     * values are: 'border-1', 'border-2', 'border-3', 'border-4', 'border-5';
+     */
+    getBorderWidth() {
+        return `border-${this.props.borderWidth || 5}`;
+    }
+
     render() {
-        return <Card className={"border-0 border-start border-5 " + this.props.borderColor}>
+        return <Card className={"border-0 border-start " + this.getBorderWidth() + " " + this.props.borderColor}>
             <CardBody>
                 <Row>
                     <div className={"col-9"}>
