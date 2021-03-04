@@ -13,7 +13,7 @@ import {HandleSidebar} from "./HandleSidebar";
 export class Navigation extends HandleSidebar {
     render() {
         return (
-            <nav className={"navbar-expand navbar-light bg-white shadow"}>
+            <nav className={"navbar-expand navbar-light bg-white"}>
                 <button className="nav-link float-start border-0" aria-current="page"
                         style={{backgroundColor: "inherit"}}
                         onClick={() => this.props.setStatusSidebar(this.toggleSidebar())}>
