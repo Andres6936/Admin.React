@@ -36,7 +36,7 @@ export class Navigation extends HandleSidebar {
                             </svg>
                         </button>
 
-                        <div className={"dropdown-menu dropdown-menu-start w-100 mt-3"}
+                        <div className={"dropdown-menu mt-3 w-75"}
                              aria-labelledby={"admin-search-dropdown"}>
                             <form className={"input-group p-2"}>
                                 <input className={"form-control"} type={"search"} placeholder={"Search for ...."}
@@ -63,7 +63,7 @@ export class Navigation extends HandleSidebar {
                                   style={{fontSize: "8px"}}>3+</span>
                         </button>
 
-                        <div className={"dropdown-menu dropdown-menu-start w-100 pb-0 mt-3"}
+                        <div className={"dropdown-menu w-75 position-absolute top-50 start-50 translate-middle"}
                              aria-labelledby={"admin-bell-dropdown"}>
                             <h6 className={"dropdown-header border-bottom w-100"}>ALERTS CENTER</h6>
 
