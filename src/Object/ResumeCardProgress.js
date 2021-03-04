@@ -6,7 +6,7 @@ import {CardBody} from "../Component/CardBody";
 
 export class ResumeCardProgress extends React.Component {
     render() {
-        return <Card>
+        return <Card className={"border-0 border-start border-5 " + this.props.borderColor}>
             <CardBody>
                 <Row>
                     <div className={"col-9"}>

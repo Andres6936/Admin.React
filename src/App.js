@@ -69,7 +69,7 @@ export default class App extends React.Component {
                     <ResumeCard title={"EARNINGS (ANNUAL)"} text={"$215,000"} icon={<BellIcon/>}
                                 color={"text-success"} borderColor={"border-success"}/>
                     <ResumeCardProgress title={"TASKS"} percentage={50} icon={<BookIcon/>} colorTitle={"text-info"}
-                                        colorBar={"bg-info"}/>
+                                        colorBar={"bg-info"} borderColor={"border-info"}/>
                     <ResumeCard title={"PENDING REQUESTS"} text={"18"} icon={<ChatIcon/>} color={"text-warning"}
                                 borderColor={"border-warning"}/>
 
