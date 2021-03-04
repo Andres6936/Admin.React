@@ -58,6 +58,13 @@ export default class App extends React.Component {
         return this.isHiddenSidebar() ? "col-12" : "col-9";
     }
 
+    /**
+     * @return {string} The class that contracting the padding of main content for adjust the content correctly.
+     */
+    adjustMainContent() {
+        return this.isHiddenSidebar() ? "" : "px-2";
+    }
+
     render() {
         return <div className={"row m-0 p-0"}>
             <div className={this.expandSidebar() + " col-3 bg-primary p-0 m-0"}>
@@ -67,7 +74,7 @@ export default class App extends React.Component {
             <div className={this.expandMainContent() + " p-0 m-0"}>
                 <Navigation setStatusSidebar={this.hiddenSidebar}/>
 
-                <div className="container-fluid bg-light pb-4">
+                <div className={"container-fluid bg-light pb-4 " + this.adjustMainContent()}>
                     <h1 className={"text-muted py-3"}>Dashboard</h1>
 
                     <ResumeCard title={"EARNINGS (MONTHLY)"} text={"$40,000"} icon={<CalendarIcon/>}
