@@ -88,7 +88,8 @@ export default class App extends React.Component {
                                 color={"text-success"} borderColor={"border-success"}
                                 borderWidth={this.adjustBorderWidth()}/>
                     <ResumeCardProgress title={"TASKS"} percentage={50} icon={<BookIcon/>} colorTitle={"text-info"}
-                                        colorBar={"bg-info"} borderColor={"border-info"}/>
+                                        colorBar={"bg-info"} borderColor={"border-info"}
+                                        borderWidth={this.adjustBorderWidth()}/>
                     <ResumeCard title={"PENDING REQUESTS"} text={"18"} icon={<ChatIcon/>} color={"text-warning"}
                                 borderColor={"border-warning"} borderWidth={this.adjustBorderWidth()}/>
 
