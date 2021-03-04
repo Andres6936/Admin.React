@@ -44,10 +44,16 @@ export default class App extends React.Component {
         return this.state.hiddenSidebar;
     }
 
+    /**
+     * @return {string} The class that hidden the sidebar in the DOM if is need.
+     */
     expandSidebar() {
         return this.isHiddenSidebar() ? "d-none" : "";
     }
 
+    /**
+     * @return {string} The class that expand the main content in the DOM if is need.
+     */
     expandMainContent() {
         return this.isHiddenSidebar() ? "col-12" : "col-9";
     }
