@@ -65,6 +65,9 @@ export default class App extends React.Component {
         return this.isHiddenSidebar() ? "" : "px-2";
     }
 
+    /**
+     * @return {number} The border width of ResumeCard and ResumeCardProgress components.
+     */
     adjustBorderWidth() {
         return this.isHiddenSidebar() ? 5 : 2;
     }
