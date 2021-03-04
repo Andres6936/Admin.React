@@ -3,7 +3,8 @@ import React from 'react';
 /**
  * Wrapper around of Card component Bootstrap 5.
  *
- * @param color {string} (Optional) Set the background color for this Card.
+ * @param {string} className (Optional) Extra class for this card.
+ * @param {string} color (Optional) Set the background color for this Card.
  */
 export class Card extends React.Component {
 
@@ -20,7 +21,8 @@ export class Card extends React.Component {
     }
 
     render() {
-        return <div className={"card rounded shadow-sm py-2 mb-4 " + this.getBackgroundColor()}>
+        return <div className={"card rounded shadow-sm py-2 mb-4 " +
+        this.props.className + " " + this.getBackgroundColor()}>
             {this.props.children}
         </div>
     }
