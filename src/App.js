@@ -65,6 +65,10 @@ export default class App extends React.Component {
         return this.isHiddenSidebar() ? "" : "px-2";
     }
 
+    adjustBorderWidth() {
+        return this.isHiddenSidebar() ? 5 : 2;
+    }
+
     render() {
         return <div className={"row m-0 p-0"}>
             <div className={this.expandSidebar() + " col-3 bg-primary p-0 m-0"}>
@@ -78,13 +82,15 @@ export default class App extends React.Component {
                     <h1 className={"text-muted py-3"}>Dashboard</h1>
 
                     <ResumeCard title={"EARNINGS (MONTHLY)"} text={"$40,000"} icon={<CalendarIcon/>}
-                                color={"text-primary"} borderColor={"border-primary"}/>
+                                color={"text-primary"} borderColor={"border-primary"}
+                                borderWidth={this.adjustBorderWidth()}/>
                     <ResumeCard title={"EARNINGS (ANNUAL)"} text={"$215,000"} icon={<BellIcon/>}
-                                color={"text-success"} borderColor={"border-success"}/>
+                                color={"text-success"} borderColor={"border-success"}
+                                borderWidth={this.adjustBorderWidth()}/>
                     <ResumeCardProgress title={"TASKS"} percentage={50} icon={<BookIcon/>} colorTitle={"text-info"}
                                         colorBar={"bg-info"} borderColor={"border-info"}/>
                     <ResumeCard title={"PENDING REQUESTS"} text={"18"} icon={<ChatIcon/>} color={"text-warning"}
-                                borderColor={"border-warning"}/>
+                                borderColor={"border-warning"} borderWidth={this.adjustBorderWidth()}/>
 
                     <EarningOverview/>
                     <RevenueSources/>
