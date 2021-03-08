@@ -9,20 +9,36 @@ import React from 'react';
 export class Card extends React.Component {
 
     /**
-     * Avoid the pollution of className, for the general the use of default
-     * properties set the nonexistent value to 'undefined', producing a
+     * Avoid the pollution of className; Generally the use of default
+     * properties that the user hasn't defined (nonexistent value) produce
+     * 'undefined' string in the class property of DOM, producing a
      * pollution of className.
      *
      * @return {string} The value of background color for this card.
+     *  Empty string if not is defined.
      */
     getBackgroundColor() {
         // The empty string avoid the added 'undefined' to component class.
         return this.props.color ? this.props.color : "";
     }
 
+    /**
+     * Avoid the pollution of className; Generally the use of default
+     * properties that the user hasn't defined (nonexistent value) produce
+     * 'undefined' string in the class property of DOM, producing a
+     * pollution of className.
+     *
+     * @return {string} The value of background color for this card.
+     *  Empty string if not is defined.
+     */
+    getExtraClass() {
+        // The empty string avoid the added 'undefined' to component class.
+        return this.props.className ? this.props.className : "";
+    }
+
     render() {
         return <div className={"card rounded shadow-sm py-2 mb-4 " +
-        this.props.className + " " + this.getBackgroundColor()}>
+        this.getExtraClass() + " " + this.getBackgroundColor()}>
             {this.props.children}
         </div>
     }
