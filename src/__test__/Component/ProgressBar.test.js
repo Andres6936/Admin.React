@@ -11,9 +11,4 @@ describe('<ProgressBar/>', function () {
         const wrapper = shallow(<ProgressBar/>);
         expect(toJson(wrapper)).toMatchSnapshot();
     })
-
-    it("Render for default Row component", () => {
-        const wrapper = shallow(<ProgressBar/>);
-        expect(wrapper.contains(<div className={"row"}/>)).toEqual(true);
-    })
 })

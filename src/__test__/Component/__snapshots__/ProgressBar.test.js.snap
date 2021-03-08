@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProgressBar/> Snapshot for default Row component 1`] = `
+<Fragment>
+  <p
+    className="text-muted mb-1 small"
+  >
+    <span
+      className="float-end"
+    >
+      undefined%
+    </span>
+  </p>
+  <Progress />
+</Fragment>
+`;
