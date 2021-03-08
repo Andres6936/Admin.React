@@ -12,8 +12,8 @@ describe('<Progress/>', function () {
         expect(toJson(wrapper)).toMatchSnapshot();
     })
 
-    it("Render for default Row component", () => {
-        const wrapper = shallow(<Progress/>);
-        expect(wrapper.contains(<div className={"row"}/>)).toEqual(true);
+    it("Snapshot for Row component", () => {
+        const wrapper = shallow(<Progress colorBar={"bg-primary"} percentage={80}/>);
+        expect(toJson(wrapper)).toMatchSnapshot();
     })
 })
