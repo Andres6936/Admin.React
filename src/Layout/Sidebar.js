@@ -21,13 +21,13 @@ import {HandleSidebar} from "./HandleSidebar";
 export class Sidebar extends HandleSidebar {
     render() {
         return <ul className={"list-group text-center pt-3 sticky-top"}>
-            <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}}>
+            <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}} href={"/404"}>
                 <EmojiWinkFillIcon/>
             </a>
 
             <hr className={"text-white mx-3 my-1"}/>
 
-            <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}}>
+            <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}} href={"/404"}>
                 <SpeedometerIcon/>
                 <p className={"text-white fw-bold mt-2 mb-0"} style={{fontSize: "10px"}}>Dashboard</p>
             </a>
@@ -36,12 +36,12 @@ export class Sidebar extends HandleSidebar {
 
             <p className={"text-white-50 fw-bold mt-2 mb-0 small"} style={{fontSize: "11px"}}>INTERFACE</p>
 
-            <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}}>
+            <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}} href={"/404"}>
                 <GearFillIcon/>
                 <p className={"text-white fw-bold mt-2 mb-0"} style={{fontSize: "10px"}}>Components</p>
             </a>
 
-            <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}}>
+            <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}} href={"/404"}>
                 <HammerIcon/>
                 <p className={"text-white fw-bold mt-2 mb-0"} style={{fontSize: "10px"}}>Utilities</p>
             </a>
@@ -50,17 +50,17 @@ export class Sidebar extends HandleSidebar {
 
             <p className={"text-white-50 fw-bold mt-2 mb-0 small"} style={{fontSize: "11px"}}>ADDONS</p>
 
-            <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}}>
+            <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}} href={"/404"}>
                 <FolderFillIcon/>
                 <p className={"text-white fw-bold mt-2 mb-0"} style={{fontSize: "10px"}}>Pages</p>
             </a>
 
-            <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}}>
+            <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}} href={"/404"}>
                 <GraphUpIcon/>
                 <p className={"text-white fw-bold mt-2 mb-0"} style={{fontSize: "10px"}}>Charts</p>
             </a>
 
-            <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}}>
+            <a className={"list-group-item"} style={{backgroundColor: "inherit", border: "none"}} href={"/404"}>
                 <TableIcon/>
                 <p className={"text-white fw-bold mt-2 mb-0"} style={{fontSize: "10px"}}>Tables</p>
             </a>

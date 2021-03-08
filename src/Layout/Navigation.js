@@ -67,7 +67,7 @@ export class Navigation extends HandleSidebar {
                              aria-labelledby={"admin-bell-dropdown"}>
                             <h6 className={"dropdown-header border-bottom w-100"}>ALERTS CENTER</h6>
 
-                            <a className={"dropdown-item border-bottom mt-2"}>
+                            <a className={"dropdown-item border-bottom mt-2"} href={"/404"}>
                                 <div className={"row row-cols-2 d-flex align-items-center"}>
                                     <div className={"col-3 text-center"}>
                                         <div className={"rounded-circle bg-primary py-2 mx-1"}>
@@ -87,7 +87,7 @@ export class Navigation extends HandleSidebar {
                                     </div>
                                 </div>
                             </a>
-                            <a className={"dropdown-item border-bottom mt-2"}>
+                            <a className={"dropdown-item border-bottom mt-2"} href={"/404"}>
                                 <div className={"row row-cols-2 d-flex align-items-center"}>
                                     <div className={"col-3 text-center"}>
                                         <div className={"rounded-circle bg-success py-2 mx-1"}>
@@ -108,7 +108,7 @@ export class Navigation extends HandleSidebar {
                                     </div>
                                 </div>
                             </a>
-                            <a className={"dropdown-item border-bottom mt-2"}>
+                            <a className={"dropdown-item border-bottom mt-2"} href={"/404"}>
                                 <div className={"row row-cols-2 d-flex align-items-center"}>
                                     <div className={"col-3 text-center"}>
                                         <div className={"rounded-circle bg-warning py-2 mx-1"}>
@@ -128,7 +128,7 @@ export class Navigation extends HandleSidebar {
                                     </div>
                                 </div>
                             </a>
-                            <a className={"dropdown-item text-center mb-0"}>
+                            <a className={"dropdown-item text-center mb-0"} href={"/404"}>
                                 <span className={"small text-muted"}>Show All Alerts</span>
                             </a>
                         </div>
@@ -144,7 +144,7 @@ export class Navigation extends HandleSidebar {
                     </li>
 
                     <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <a className="nav-link" href={"/404"}>
                             <img src={UnDrawProfile} height={"32px"} width={"32px"} alt={"Profile"}/>
                         </a>
                     </li>
