@@ -14,6 +14,6 @@ describe('<CardHeader/>', function () {
 
     it("Render for default Row component", () => {
         const wrapper = shallow(<CardHeader/>);
-        expect(wrapper.contains(<div className={"card-header"}/>)).toEqual(true);
+        expect(wrapper.contains(<div className={"card-header text-primary bg-white fw-bold"}/>)).toEqual(true);
     })
 })
