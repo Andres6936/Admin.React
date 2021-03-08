@@ -19,6 +19,11 @@ describe('<Card/>', function () {
         expect(wrapper.contains(<div className={"card rounded shadow-sm py-2 mb-4  "}/>)).toEqual(true);
     })
 
+    it("Render for with background color the Card component", () => {
+        const wrapper = shallow(<Card color={"bg-primary"}/>);
+        expect(wrapper.contains(<div className={"card rounded shadow-sm py-2 mb-4  bg-primary"}/>)).toEqual(true);
+    })
+
     it("Render with extra class the Card component", () => {
         const wrapper = shallow(<Card className={"mt-5 mx-3"}/>);
         expect(wrapper.contains(<div className={"card rounded shadow-sm py-2 mb-4 mt-5 mx-3 "}/>)).toEqual(true);
