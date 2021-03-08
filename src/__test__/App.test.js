@@ -5,7 +5,15 @@ import App from "../App";
 
 Enzyme.configure({adapter: new Adapter()})
 
-it("The sidebar is hidden for default", () => {
-    const wrapper = shallow(<App/>);
-    expect(wrapper.state('hiddenSidebar')).toEqual(true);
+describe('<App/>', function () {
+    it("The sidebar is hidden for default", () => {
+        const wrapper = shallow(<App/>);
+        expect(wrapper.state('hiddenSidebar')).toEqual(true);
+    })
+
+    it("Show the sidebar to call the function hiddenSidebar(boolean)", () => {
+        const wrapper = shallow(<App/>);
+        wrapper.instance().hiddenSidebar(false);
+        expect(wrapper.state('hiddenSidebar')).toEqual(false);
+    })
 })
