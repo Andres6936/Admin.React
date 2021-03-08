@@ -22,6 +22,9 @@ jobs:
       # Using npm ci is generally faster than running npm install.
       # For more information, see npm ci and "Introducing npm ci for
       # faster, more reliable builds".
-      - run: npm ci
+      # Alternatively, you can pass --frozen-lockfile to install the
+      # versions in the yarn.lock file and prevent updates to the
+      # yarn.lock file.
+      - run: yarn --frozen-lockfile
       - run: npm run build --if-present
       - run: npm test
