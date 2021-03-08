@@ -1,6 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Card/> Snapshot for default of Card component 1`] = `
+exports[`<Card/> Snapshot for Card component with CardBody and CardHeader child 1`] = `
+<div
+  className="card rounded shadow-sm py-2 mb-4  "
+>
+  <CardHeader />
+  <CardBody />
+</div>
+`;
+
+exports[`<Card/> Snapshot for Card component with CardBody child 1`] = `
+<div
+  className="card rounded shadow-sm py-2 mb-4  "
+>
+  <CardBody />
+</div>
+`;
+
+exports[`<Card/> Snapshot for default Card component 1`] = `
 <div
   className="card rounded shadow-sm py-2 mb-4  "
 />
